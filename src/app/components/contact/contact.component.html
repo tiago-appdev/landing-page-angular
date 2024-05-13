@@ -1,0 +1,36 @@
+<div class='fullscreen-container'>
+  <div class="login-container">
+    <h3 class="login-title">Welcome back</h3>
+  <form [formGroup]="contactform" (ngSubmit)="onSubmit()">
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input [ngClass]="{'is-invalid': hasError('email', 'required') || hasError('email', 'email')}" type="email" id="email" formControlName="email">
+      @if (hasError('email', 'required')) {
+        <div class="text-danger">
+          Email is required
+        </div>
+      }
+      @if (hasError('email', 'email')) {
+        <div class="text-danger">
+          Email is invalid!
+        </div>
+      }
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input [ngClass]="{'is-invalid': hasError('password', 'required') || hasError('password', 'minlength')}" type="password" id="password" formControlName="password">
+      @if (hasError('password', 'required')) {
+        <div class="text-danger">
+          Password is required!
+        </div>
+      }
+      @if (hasError('password', 'minlength')) {
+        <div class="text-danger">
+          Password is too short!
+        </div>
+      }
+    </div>
+    <button type="submit" class="login-button">Submit</button>
+  </form>
+  </div>
+</div>

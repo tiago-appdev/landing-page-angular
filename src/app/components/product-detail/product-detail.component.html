@@ -1,0 +1,46 @@
+<!-- <div class="wrapper">
+  <div class="product-img">
+    <img
+      src="{{ product?.image }}"
+      class="card-img-top"
+      alt="{{ product?.title }}"
+      height="420"
+      width="327"
+    />
+  </div>
+  <div class="product-info">
+    <div class="product-text">
+      <h1>{{ product?.title | uppercase }}</h1>
+      <p>{{ product?.description }}</p>
+    </div>
+    <div class="product-price-btn">
+      <p>
+        <span>{{ product?.price }}</span
+        >$
+      </p>
+      <button type="button">buy now</button>
+    </div>
+  </div>
+</div> -->
+
+<section class="product">
+  <div class="card__product">
+    <div class="product-img">
+      <img
+        src="{{ product?.image }}"
+        class="card-img"
+        alt="{{ product?.title }}"
+      />
+    </div>
+    <div class="card__text">
+      <h3 class="card__title">{{ product?.title }}</h3>
+      <p class="card__features">
+        {{ product?.description }}
+      </p>
+      <div class="card__footer">
+        <span class="card__price">{{ product?.price | currency }}</span>
+        <a href="#" class="card__cta">Pruébalo ahora</a>
+      </div>
+    </div>
+  </div>
+</section>

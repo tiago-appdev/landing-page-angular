@@ -1,0 +1,121 @@
+.product {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  width: 60%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px 0;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+
+.card-img {
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.card__text {
+  width: 60%;
+  height: auto;
+  word-wrap: break-word;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 7px 10px 7px;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.card__title {
+  font-size: 1.8rem;
+  color: #444444;
+}
+
+.card__features {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.card__price {
+  font-size: 1.8rem;
+  color: #444444;
+  font-weight: bold;
+}
+
+.card__cta {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: transparent;
+  border-radius: 60px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #3f3b3b;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
+}
+
+.card__cta:hover {
+  background-color: #79b0a1;
+}
+
+@media screen and (max-width: 768px) {
+  .card__product {
+    flex-direction: column;
+    width: 90%;
+  }
+  .product-img {
+    width: 100%;
+  }
+  .card__text {
+    width: 100%;
+  }
+
+  .card__footer {
+    flex-direction: column;
+  }
+
+  .card__cta {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card__footer {
+    justify-content: space-between;
+  }
+}

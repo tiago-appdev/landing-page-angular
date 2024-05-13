@@ -1,0 +1,87 @@
+.body {
+  margin: 0;
+}
+
+.fullscreen-container {
+  background-image: url("../../../assets/contact-bg.jpg");
+  min-height: calc(100vh - 56px);
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  /* background-color: hsla(201, 100%, 50%, 0.6); */
+  padding: 50px 30px;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px 1px #c8c8c854;
+  background-color: #c8c8c87c;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid #e9e9e94f;
+}
+
+.login-title {
+  color: #fff;
+  text-align: center;
+  margin: 0 0 40px;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1.2em;
+  margin-bottom: 7px;
+}
+
+.input-group input {
+  background: none;
+  border: none;
+  outline: none;
+  background-color: hsla(201, 30%, 95%, 0.4);
+  font-size: 1.5em;
+  padding: 10px;
+  border: 1px solid hsl(201, 6%, 20%);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.input-group input:focus {
+  border-color: hsl(201, 50%, 50%);
+}
+
+.login-button {
+  background: none;
+  border: none;
+  outline: none;
+  background-color: hsla(201, 100%, 50%, 0.1);
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid hsl(201, 6%, 20%);
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-button:hover,
+.login-button:focus {
+  background-color: hsla(200, 4%, 49%, 0.3); /* Brighter blue bg */
+  border-color: hsl(198, 6%, 40%); /* Brighter blue border */
+}
